@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Le Quai Antique</title>
+  <link rel="stylesheet" type="text/css" href="style.css-1.css" >
+  <script src="script.js"></script>
+  <script>
+    // Fonction pour masquer les pages autres que la page d'accueil
+    function masquerPages() {
+      var pages = document.getElementsByClassName('section');
+      for (var i = 0; i < section.length; i++) {
+        section[i].style.display = 'none';
+      }
+    }
+  
+    // Fonction pour afficher une page spécifique
+    function afficherPage(sectionId) {
+      masquerPages();
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+  
+</head>
+
+<body>
+  <header>
+    <!-- <img src="/Users/kuulyn6/Downloads/LeQuaiAntique.png" alt="Logo de mon site web"> -->
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#connexion">Connexion</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#carte">Carte</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+      </ul>
+    </nav>     
+  </header>
+
+  <section id="connexion">
+    <div class="container">
+      <h2>Connexion</h2>
+      <form action="#" method="post">
+        <label for="email">Adresse mail</label>
+        <input type="email" id="email" name="email" placeholder="Adresse mail">
+  
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" placeholder="Mot de passe">
+  
+        <input type="submit" value="Se connecter" class="cta-button">
+      </form>
+    </div>
+  </section>
+  
+  <section id="accueil">
+    <div class="hero-image">
+      <h1>Bienvenue chez Le Quai Antique</h1>
+      <p>Découvrez notre cuisine raffinée et nos saveurs uniques</p>
+    </div>
+  </section>
+    <section>
+      <div class="content">
+        <div class="column">
+          <div class="clickable">
+            <h2 class="img-title">Risotto aux légumes</h2>
+            <img src="/Users/kuulyn6/Downloads/risotto.png" alt="Logo de mon site web" class="block"/>
+          </div> 
+          <div class="clickable">
+            <h2 class="img-title">Filet de Daurade</h2>
+            <img src="/Users/kuulyn6/Downloads/daurade.png" alt="Logo de mon site web" class="block"/>
+          </div>
+
+          <div class="clickable">
+            <h2 class="img-title">Coeur de Burrata</h2>
+            <img src="/Users/kuulyn6/Downloads/burrata.png" alt="Logo de mon site web" class="block"/>
+          </div>
+
+          <div class="clickable">
+            <h2 class="img-title">Tiramisu</h2>
+            <img src="/Users/kuulyn6/Downloads/tiramisu.png" alt="Logo de mon site web" class="block"/>
+          </div>
+        </div>  
+      </div>  
+      <br>
+      <br>
+      <a href="#reservation" class="cta-button" style="text-align:center;">Faire une réservation</a>
+      <br>
+    </section>
+
+
+  <section id="carte">
+    <div class="container">
+       <fieldset>
+        <legend>
+        <h2>Entrées</h2></legend>
+        <div class="dish">
+          <h3>Salade César</h3>
+          <span class="price">8€</span>
+          <p>Laitue romaine, croûtons, parmesan, vinaigrette César</p>
+        </div>
+        <div class="dish">
+          <h3>Velouté de courgettes</h3>
+          <span class="price">6€</span>
+          <p>Crème, basilic, croûtons</p>
+        </div>
+        <div class="dish">
+          <h3>Tomates burrata 200g</h3>
+          <span class="price">12€</span>
+          <p>Tomates cerises, huile d'olive, origan, Coeur de Burrata 200g</p>
+        </div>
+        <div class="dish">
+            <h3>Foccaccia jambon cru fromage</h3>
+            <span class="price">5€</span>
+            <p>Pain frais, Fines tranches de jambon cru, huile d'olive, emmental</p>
+          </div>
+          <div class="dish">
+            <h3>Foccaccia de saumon</h3>
+            <span class="price">5€</span>
+            <p>pain frais, citron, Fines tranches de saumon,huile d'olive, beurre</p>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+        <h2>Plats principaux</h2></legend>
+        <div class="dish">
+          <h3>Burger de boeuf</h3>
+          <p>Pain artisanal, steak de boeuf haché, fromage cheddar, laitue, tomate, oignons caramélisés, frites</p>
+          <span class="price">18€</span>
+        </div>
+        <div class="dish">
+          <h3>Risotto aux légumes et parmesan</h3>
+          <p>Riz Arborio, champignons de saison, parmesan, crème</p>
+          <span class="price">14€</span>
+        </div>
+        <div class="dish">
+          <h3>Filet de dorade</h3>
+          <p>Purée de pommes de terre, courgettes grillées, beurre blanc</p>
+          <span class="price">18€</span>
+        </div>
+        <div class="dish">
+            <h3>Escalope de dinde à la milanaise (enfant)</h3>
+            <p>Spaghettis italienne, sauce tomate crème, escalope de dinde</p>
+            <span class="price">10€</span>
+          </div>
+       </fieldset>
+       <fieldset>   
+        <legend>
+        <h2>Desserts</h2></legend>
+        <div class="dish">
+          <h3>Tiramisu</h3>
+          <span class="price">7€</span>
+          <p>Biscuit cuillère, café, mascarpone, cacao</p>
+        </div>
+        <div class="dish">
+          <h3>Crème brûlée</h3>
+          <span class="price">6€</span>
+          <p>Vanille, cassonade caramélisée</p>
+        </div>
+        <div class="dish">
+          <h3>Assiette de fromages</h3>
+          <span class="price">9€</span>
+          <p>Sélection de fromages affinés, fruits secs, pain frais</p>
+        </div>
+        <div class="dish">
+            <h3>Fondant au chocolat</h3>
+            <span class="price">5€</span>
+            <p>Chocolat</p>
+        </div>
+       </fieldset> 
+      <fieldset>
+        <legend>
+        <h2>Boissons</h2></legend>
+        <h3>SOFT</h3>
+        <div clss="dish">
+            <span class="price"> 10€ la bouteille 75cl</span>
+            <h4>Eau Plate</h4>
+            <p>Evian</p>
+        </div>   
+        <div clss="dish">
+            <span class="price"> 10€ la bouteille 75cl</span>
+            <h4>Eau Gazeuse</h4>
+            <p>Badoit</p>
+        </div>
+        <div clss="dish">
+            <span class="price"> 4€</span>
+            <h4>Coca-Cola</h4>
+        </div>
+        <div clss="dish">
+            <span class="price"> 4€</span>
+            <h4>Ice Tea</h4>
+        </div>
+        <div clss="dish">
+            <span class="price"> 4€</span>
+            <h4>Schweppes</h4>
+        </div> 
+
+        <h3>ALCOOL</h3>
+        <div class="dish">
+          <h4>Vin rouge</h4>
+          <span class="price">28€ la bouteille 75cl/ 8€ le verre</span>
+          <p>Château Haut-Gléon, Corbières</p>
+        </div>
+        <div class="dish">
+            <h4>Vin blanc</h4>
+            <span class="price">25€ la bouteille 75cl/ 6€ le verre</span>
+            <p>Château Roublon, Provence</p>
+          </div>
+          <div class="dish">
+            <h4>Vin rosé</h4>
+            <span class="price">25€ la bouteille 75cl/ 6€ le verre</span>
+            <p>Château Roublon Rosé Or, Provence</p>
+          </div>
+        <div class="dish">
+          <h4>Biére blonde</h4>
+          <span class="price">5€</span>
+          <p>La Brasserie des Garrigues</p>
+        </div>
+        <div class="dish">
+          <h4>The Irish Gold </h4>
+          <span class="price">10€</span>
+          <p>Whiskey Paddy, Schnaps à la pêche, Jus d’orange, Ginger beer Franklin & Sons</p>
+        </div>  
+        <div class="dish">
+            <h4>Mojito</h4>
+            <span class="price">9€</span>
+            <p>Rhum blanc, Sirop de cannes, 1/2 citron vert, feuilles de menthes</p>
+          </div>  
+          <div class="dish">
+            <h4>Cocktail Margarita</h4>
+            <span class="price">9€</span>
+            <p>Tequila, Cointreau triple sec, Jus de citron vert</p>
+          </div> 
+        </fieldset>       
+  </section>
+
+  <br>
+
+  <section id="menu">
+    <div class="container">
+        <fieldset>
+            <legend>Nos Formules du midi</legend>
+            <div class="menu-items">
+            <div class="menu-item"> 
+             <h3>Menu salé</h3>
+             <p>Entrée (Foccaccia) + Plat au choix selon une sélection</p>
+             <span class="price">21€</span>
+           </div>  
+           <div class="menu-item"> 
+             <h3>Menu gourmand</h3>
+             <p>Plat au choix selon une sélection + Dessert (crème bruléee ou fondant au chocolat)</p>
+             <span class="price">21€</span>
+           </div>  
+           <div class="menu-item"> 
+             <h3>Menu enfant</h3>
+             <p>Escalope de dinde à la milanaise + Dessert (fondant au chocolat)</p>
+             <span class="price">15€</span>
+           </div>  
+       </fieldset>
+        <fieldset>
+             <legend>Nos Formules du soir</legend>
+             <div class="menu-items">
+             <div class="menu-item"> 
+              <h3>Menu Viande</h3>
+              <p>Amuse bouche + Plat principal composé de viande et accompagnement au choix + Dessert du chef</p>
+              <span class="price">45€</span>
+            </div>  
+            <div class="menu-item"> 
+              <h3>Menu Poisson</h3>
+              <p>Amuse bouche + Plat principal composé de poisson frais et accompagnement au choix + Dessert du chef</p>
+              <span class="price">45€</span>
+            </div>  
+            <div class="menu-item"> 
+              <h3>Menu Végétarien</h3>
+              <p>Amuse bouche + Risotto aux légumes et parmesan + Dessert du chef</p>
+              <span class="price">37€</span>
+            </div>  
+        </fieldset>
+    </div>
+  </section>
+
+  <br>
+
+
+  <section id="reservation">
+    <div class="container">
+      <h2>Réservation</h2>
+      <form>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        <label for="couvert">Nombre de couvert :</label>
+        <input type="number" id="couvert" name="couvert" required>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required>
+        <fieldset>
+            <legend>Heure</legend>
+            <label for="sponsor">MIDI</label>
+                <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-warning" data-bs-toggle type="button">12:00</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">12:15</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">12:30</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">12:45</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">13:00</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">13:15</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">13:30</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">13:45</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">14:00</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">14:15</button>
+                <button class="btn btn-warning" data-bs-toggle type="button">14:30</button>
+                </div>   
+
+            <label for="sponsor">SOIR</label>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-primary" data-bs-toggle type="button">19:00</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">19:15</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">19:30</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">19:45</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">20:00</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">20:15</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">20:30</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">20:45</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">21:00</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">21:15</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">21:30</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">21:45</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">22:00</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">22:15</button>
+                    <button class="btn btn-primary" data-bs-toggle type="button">22:30</button>
+                    </div>   
+        </fieldset>
+
+
+        <label for="allergy">Allergie(s) :</label>
+        <input type="text" id="allergy" name="allergy">
+        <input type="submit" value="Réserver" class="cta-button">
+      </form>
+    </div>
+  </section>
+
+</body> 
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="wrapper">
+    <div>
+        <table>
+            <caption>Nos horraires d'ouvertures</caption>
+            <thead>
+            <tr>
+                <th></th>
+                <th>MIDI</th>
+                <th>SOIR</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="1" class="bold">LUNDI</td>
+                <td>Fermé</td>
+                <td>Fermé</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="bold">MARDI</td>
+                <td>12:00 - 15:00</td>
+                <td>19:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="bold">MERCREDI</td>
+                <td>12:00 - 15:00</td>
+                <td>19:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="bold">JEUDI</td>
+                <td>12:00 - 15:00</td>
+                <td>19:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="bold">VENDREDI</td>
+                <td>12:00 - 15:00</td>
+                <td>19:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="bold">SAMEDI</td>
+                <td>Fermé</td>
+                <td>19:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td rowspan="1" class="bold">DIMANCHE</td>
+                <td>11:00 - 13:30</td>
+                <td>Fermé</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<style>
+    body {
+        font-family: 'EB Garamond', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+        padding: 2rem;
+        padding-bottom: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table, th, td {
+        
+        border-collapse: collapse;
+        padding: 10px
+    }
+
+    thead {
+        background-color: #822121;
+    }
+
+    tfoot {
+        background-color: lightgray;
+    }
+
+    caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+</style>
+          <h4>N'hésitez pas à reserver votre table</h4>
+          <ul>
+            <li><a href="#reservation">Reservation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
