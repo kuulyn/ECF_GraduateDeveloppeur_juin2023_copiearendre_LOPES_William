@@ -1,0 +1,319 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h1, h2, h3, p, form, label, input, textarea {
+    margin: 0;
+    padding: 0;
+    font-family:'EB Garamond', serif;
+  }
+  
+  /* Styles généraux */
+  body {
+    background-color: #a8a2a2;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #eee;
+    color: #333;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #a8a2a2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  /*IMAGE*/
+  img {
+    justify-content: center;
+    padding-top: 10px;
+    position: center;
+    max-width: 50%;
+  }
+  h1 {
+    margin: 2rem;
+  }
+  .img-title {
+    justify-content: center;
+    position: absolute;
+    margin-left: 2rem;
+    color: rgb(255, 255, 255);
+  }
+
+  
+
+/* BARRE DE NAVIGATION */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  /* Section Accueil */
+  #accueil {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-image {
+    text-align: center;
+  }
+  
+  .hero-image h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #822121;
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #822121;
+  }
+
+
+  .img-title {
+    max-width: 25px;
+    max-height: 30px;
+  }
+
+  /* Section Connexion */
+  #connexion {
+    padding: 150px;
+    background-color : 
+  }
+  
+  /* Section Menu */
+  #menu {
+    background-color: #a8a2a2;
+    padding: 200px;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    flex-basis: 300px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  
+  .menu-item h3 {
+    color: #191919;
+    font-style: italic;
+    font-family:'EB Garamond', serif;
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .menu-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #806d0f;
+  }
+  
+  .menu-item .price {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #822121;
+  }
+
+  
+  /* Section Réservation */
+  #reservation {
+    color: #191919;
+    background-color: #a8a2a2;
+    padding: 150px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    padding: 15px 30px;
+    background-color: #822121;
+  }
+
+.h2 {
+    color: #822121;
+}
+
+
+/* Section pour la carte de restaurant */
+#carte {
+    padding: 250px;
+    background-color: #191919;
+    max-width: 400px;
+    border-color: #822121;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Styles pour les titres de section */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'EB Garamond', serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 2px solid #822121;
+  }
+  
+  /* Styles pour les plats */
+  .dish {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles pour les noms de plats */
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'EB Garamond', serif;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Styles pour les descriptions de plats */
+  p {
+    font-family:'EB Garamond', serif;
+    margin-bottom: 10px;
+    color: #a48b10;
+  }
+  
+  /* Styles pour les prix */
+  .price {
+    float: right;
+    font-weight: bold;
+    color: #822121;
+    font-family:'EB Garamond', serif;
+  }
+  
+  /* Styles pour les boissons */
+  .drink {
+    font-family:'EB Garamond', serif;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 20px;
+  }
+  
+  /* Styles pour les noms de boissons */
+  .drink h3 {
+    font-family:'EB Garamond', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styles pour les descriptions de boissons */
+  .drink p {
+    font-family:'EB Garamond', serif;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .table {
+    font-family: 'EB Garamond', serif;
+    color: #822121;
+  }
